@@ -1,0 +1,204 @@
+JSON
+ 4. Создать внешний репозиторий c названием JSON.
+В браузере открыть https://github.com/
+Залогиниться
+Создать новый публичный репозиторий JSON
+
+ 5. Клонировать репозиторий JSON на локальный компьютер.
+git clone https://github.com/NatalliaZhukava/JSON
+
+ 6. Внутри локального JSON создать файл “new.json”.
+cd JSON/
+touch new.json
+
+ 7. Добавить файл под гит.
+git add .
+
+ 8. Закоммитить файл.
+git commit -m "add new.json"
+
+ 9. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 10. Отредактировать содержание файла “new.json” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате JSON.
+vim new.json 
+i
+{
+	"Name":"Natallia",
+	"LastName":"Zhukova",
+	"Age":35,
+	"NumberOfPets":0,
+	"Salary":5000
+}
+Esc
+:wq
+
+11. Отправить изменения на внешний репозиторий.
+git commit -am "add info"
+git push
+
+ 12. Создать файл preferences.json
+touch preferences.json
+
+ 13. В файл preferences.json добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате JSON.
+vim preferences.json
+i
+{
+	"FavouriteFilm":"You've got mail",
+	"FavouriteTVshow":"The BBT",
+	"FavouriteFood":"Pasta",
+	"FavouriteSeason":"Summer",
+	"Country":"Italy"
+}
+Esc
+:wq 
+
+14. Создать файл sklls.json добавить информацию о скиллах которые будут изучены на курсе в формате JSON
+vim skills.json
+i
+{
+	"skills":["Theory of Testing", "Terminal", "Git", "Postman", "SQL", "Mobile testing"]
+}
+Esc
+:wq 
+
+ 15. Отправить сразу 2 файла на внешний репозиторий.
+git add .
+git commit -m "new info"
+git push
+
+ 16. На веб интерфейсе создать файл bug_report.json.
+На странице https://github.com/NatalliaZhukava/JSON нажать кнопку [Add file], выбрать "Create a new file"
+В поле "Name your file" ввести bug_report.json
+
+ 17. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать на кнопку [Commit changes]
+
+ 18. На веб интерфейсе модифицировать файл bug_report.json, добавить баг репорт в формате JSON.
+ Открыть файл bug_report.json
+Из выпадающего меню "Edit this file" выбрать "Edit in place"
+В текстовом поле для редактирования ввести
+{
+  "Title":"Onboarding is missing after deleting data and reinstalling the application",
+  "Severity":"Minor",
+  "Priority":"Medium",
+  "Precondition":"The application is installed and closed",
+  "STR":["1. Delete application data",
+           "2. Uninstall the application from the device",
+          "3. Install the app",
+          "4. Launch the app"],
+  "Expected Result":"Switching to Onboarding",
+  "Actual Result":"Switching to Learning Section"
+}
+
+19. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать на кнопку [Commit changes] 
+
+ 20. Синхронизировать внешний и локальный репозиторий JSON
+git pull
+
+
+XML
+ 21. Создать внешний репозиторий c названием XML.
+В браузере открыть https://github.com/
+Залогиниться
+Создать новый публичный репозиторий XML
+
+ 22. Клонировать репозиторий XML на локальный компьютер.
+git clone https://github.com/NatalliaZhukava/XML
+
+ 23. Внутри локального XML создать файл “new.xml”.
+touch new.xml
+
+ 24. Добавить файл под гит.
+git add .
+
+ 25. Закоммитить файл.
+git commit -m "add new.xml"
+
+ 26. Отправить файл на внешний GitHub репозиторий.
+git push
+
+ 27. Отредактировать содержание файла “new.xml” - написать информацию о себе (ФИО, возраст, количество домашних животных, будущая желаемая зарплата). Всё написать в формате XML.
+ vim new.xml 
+i
+<person>
+	<FirstName>Natallia</FirstName>
+	<LastName>Zhukova</LastName>
+	<Age>35</Age>
+	<NumberOfPets>0</NumberOfPets>
+	<Salary>5000</Salary>
+</person>
+Esc
+:wq 
+
+28. Отправить изменения на внешний репозиторий.
+git commit -am "add info"
+git push
+
+ 29. Создать файл preferences.xml
+touch preferences.xml
+
+ 30. В файл preferences.xml добавить информацию о своих предпочтениях (Любимый фильм, любимый сериал, любимая еда, любимое время года, сторона которую хотели бы посетить) в формате XML.
+ vim preferences.xml
+i
+<preferences>
+	<Film>You've Got Mail</Film>
+	<TVshow>The BBT</TVshow>
+	<Food>Pasta</Food>
+	<Season>Summer</Season>
+	<Country>Italy</Country>
+</preferences>
+Esc
+:wq 
+
+31. Создать файл sklls.xml добавить информацию о скиллах которые будут изучены на курсе в формате XML
+ touch skills.xml
+vim skills.xml
+i
+<skills>
+	<skill id=1>Theory of Testing</skill>
+	<skill id=2>Terminal</skill>
+	<skill id=3>Git</skill>
+	<skill id=4>Postman</skill>
+	<skill ig=5>Mobile Testing</skill>
+</skills>
+Esc
+:wq 
+
+32. Сделать коммит в одну строку.
+git add .
+git commit -m "additional info"
+
+ 33. Отправить сразу 2 файла на внешний репозиторий.
+git push
+
+ 34. На веб интерфейсе создать файл bug_report.xml.
+На странице https://github.com/NatalliaZhukava/XML нажать кнопку [Add file], выбрать "Create a new file"
+В поле "Name your file" ввести bug_report.xml
+
+ 35. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать на кнопку [Commit changes]
+
+ 36. На веб интерфейсе модифицировать файл bug_report.xml, добавить баг репорт в формате XML.
+ Открыть файл bug_report.xml
+Из выпадающего меню "Edit this file" выбрать "Edit in place"
+В текстовом поле для редактирования ввести
+<bugreport>
+<Title>Onboarding is missing after deleting data and reinstalling the application</Title>
+<Severity>Minor</Severity>
+<Priority>Medium</Priority>
+<Precondition>The application is installed and closed</Precondition>
+<STR id=1>Delete application data</STR>
+<STR id=2>Uninstall the application from the device</STR>
+<STR id=3>Install the app</STR>
+<STR id=4>Launch the app</STR>
+<ExpectedResult>Switching to Onboarding</ExpectedResult>
+<ActualResult>Switching to Learning Section</ActualResult>
+</bugreport>
+
+ 37. Сделать Commit changes (сохранить) изменения на веб интерфейсе.
+Нажать на кнопку [Commit changes] 
+
+ 38. Синхронизировать внешний и локальный репозиторий XML
+git pull

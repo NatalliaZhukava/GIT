@@ -1,0 +1,83 @@
+GitHub. HW_2
+1. На локальном репозитории сделать ветки для:
+- Postman
+- Jmeter
+- CheckLists
+- Bug Reports
+- SQL
+- Charles
+- Mobile testing
+
+git branch Postman
+git branch Jmeter
+git branch CheckLists
+git branch Bug Reports
+git branch SQL
+git branch Charles
+git branch Mobile testing
+
+ИЛИ: for branch in Postman Jmeter CheckLists Bug_Reports SQL Charles Mobile_Testing; do git branch $branch; done
+
+2. Запушить все ветки на внешний репозиторий
+git push --all origin
+
+3. В ветке Bug Reports сделать текстовый документ со структурой баг репорта
+git checkout Bug_Reports 
+cat > bug_report_atributes.txt
+1. ID
+2. Titummary
+3. Preconditions
+4. Steps to reproduce
+5. Expected result
+6. Actual result
+7. Attachments
+8. Severity
+9. Priority
+10. Environment
+11. Comments
+Ctrl+C
+
+4. Запушить структуру багрепорта на внешний репозиторий
+git add .
+git commit -m "Add bug_reports_atributes"
+git push -u origin Bug_Reports
+
+5. Вмержить ветку Bug Reports в Main
+git checkout main 
+git merge Bug_Reports
+
+6. Запушить main на внешний репозиторий.
+git push
+
+7. В ветке CheckLists набросать структуру чек листа.
+git checkout CheckLists 
+cat > checklist_structure.txt
+1. Project name, version, date of release
+2. Checklist name, testing type
+3. Tested module (optional)
+4. Checkings:
+4.1. ID
+4.2. Title
+4.3. Expected result (optional)
+5.Results:
+5.1. Tester's name
+5.2. Environment
+5.3. Date
+5.4. Status of the checking
+Ctrl+C
+
+8. Запушить структуру на внешний репозиторий
+git add .
+git commit -m "add checklist structure"
+git push -u origin CheckLists
+
+9. На внешнем репозитории сделать Pull Request ветки CheckLists в main
+Открыть страницу https://github.com/NatalliaZhukava/GIT
+На странице ветки Main нажать на кнопку Compare & pull request
+На странице Open a pull request нажать на кнопку Create pull request
+На странице pull request нажать на кнопку Merge pull request, затем Confirm merge
+
+10. Синхронизировать Внешнюю и Локальную ветки Main
+git checkout main 
+git pull
+
