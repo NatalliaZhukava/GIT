@@ -1,10 +1,8 @@
 1. ID
-2. Title
-3. Severity
-4. Priority
-5. [A[A[A[C[C[CSummary
-[C[C[C[C[DPreconditions[B[D[D[D[D[D[D[D[D[D[D[D[D[D[A[C[C[C[C[C[C[C[C[C[C[C[C[C[B[D[D[D[D[D[D[D[D[D[D[D[D[DSteps to reproduce
-[C[C[CExpected result
+2. Titummary
+3. Preconditions
+4. Steps to reproduce
+5. Expected result
 6. Actual result
 7. Attachments
 8. Severity
